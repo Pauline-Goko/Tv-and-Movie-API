@@ -1,0 +1,11 @@
+.category ul {
+   display: flex;
+   gap: 100px;
+   list-style: none;
+   margin-top: 12%;
+}
+
+.category ul li a{
+    text-decoration: none;
+    
+}
