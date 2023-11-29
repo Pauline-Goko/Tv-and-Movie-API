@@ -83,5 +83,20 @@ export const getMovieDetails = async (movieId) => {
     catch(error){
         return error.message;
     }
-    }
+    };
    
+
+    // export const getCategories = async () => {
+    //     try {
+    //       const response = await fetch(`${BASE_URL}/3/movie/now_playing`, {
+    //         method: 'GET',
+    //         headers: {
+    //           Authorization: `Bearer ${ACCESS_TOKEN}`,
+    //         },
+    //       });
+    //       const result = await response.json();
+    //       return result;
+    //     } catch (error) {
+    //       return error.message;
+    //     }
+    //   };

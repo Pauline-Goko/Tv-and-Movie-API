@@ -5,3 +5,25 @@
     height: 40px;
     border-radius: 20px;
 }
+
+.input{
+    margin-left: 33%;
+    
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.btnSearch{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 12px;
+    background-color: rgb(41, 221, 221);
+    
+}
+
+.movie{
+    text-align: center;
+    font-size:33px;
+}

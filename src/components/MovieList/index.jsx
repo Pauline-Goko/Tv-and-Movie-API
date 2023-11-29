@@ -1,47 +1,4 @@
 
-// import React,{useState,useEffect} from "react";
-// import { getMovies } from "../../utilis/utilities";
-// import './style.css';
-// // import SearchBar from "../SearchBar";
-// const IMAGE_BASE_URL = process.env.REACT_APP_IMAGE_BASE_URL
-
-// const MovieList = ()=>{
-//     const [movies, setMovies] = useState([]);
-//     const [loading, setLoading] = useState(false);
-//     useEffect(()=>{
-//         (async()=>{
-//             const movies = await getMovies();
-//             setMovies(movies.results);
-//             setLoading(false);
-//             console.log({movies});
-//         })();
-//     },[]);
-//     if(loading){
-//         return <h1>loading...</h1>
-//     }
-//     return(
-    
-//         <div className="imageContainer">
-//             {movies && loading === false && movies.length > 0 && movies.map(
-//           (item)=>(
-//             <div key={item.id}className="images">
-//                 <img src = {`${IMAGE_BASE_URL}${item.poster_path}`}
-//                alt = {item.title}
-//             />
-//             </div>
-//                 )) }
-//                 </div>
-//     )}
-//  export default MovieList;
-
-
-
-
-
-
-
-
-
 
 import React, { useState, useEffect } from "react";
 import { getMovies } from "../../utilis/utilities";
@@ -118,7 +75,7 @@ const MovieList = () => {
      </div>
       {error && <p>{error}</p>}
 
-      <div className="image-container">
+      <div className="imageContainer">
         {searchPerformed && movies.length === 0 ? (
           <p>No search results found</p>
         ) : (
